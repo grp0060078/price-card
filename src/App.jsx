@@ -2,11 +2,19 @@
 import React from 'react';
 import './components/App.css';
 
-import PriceCard from './components/Pricecard';
 
-function App() {
+
+
+
+function App({PriceCard}) {
+
   
-  return (
+  
+
+
+
+  
+return (
     
     <div className="App">
       <h1>React Price Card Task</h1>
@@ -21,16 +29,20 @@ function App() {
         
           title="FREE"
           price="0"
-          features={['✅Single User', '✅50GB Storage', '✅Unlimited Public projects','✅Community Access',
-          '❎Unlimited Private Projects','❎Deidcated Phone Support','❎Free Subdomain','❎Monthly Status Reports']}
+          features={[
+          'Single User', '✅50GB Storage', '✅Unlimited Public projects','✅Community Access',
+          '❎Unlimited Private Projects','❎Deidcated Phone Support','❎Free Subdomain','❎Monthly Status Reports']
+           }
           button="Button"
+      
         />
-        
+      
         
         <PriceCard
           title="PLUS"
           price="9"
-          features={['✅Single User', '✅50GB Storage', '✅Unlimited Public projects','✅Community Access',
+          features={[
+          '✅Single User', '✅50GB Storage', '✅Unlimited Public projects','✅Community Access',
           '✅Unlimited Private Projects','✅Deidcated Phone Support','✅Free Subdomain','❎Monthly Status Reports']}
           button="Button"
        />
@@ -38,16 +50,17 @@ function App() {
         <PriceCard
           title="PRO"
           price="49"
-          features={['✅Single User', '✅50GB Storage', '✅Unlimited Public projects','✅Community Access',
+          features={[
+            '✅Single User', '✅50GB Storage', '✅Unlimited Public projects','✅Community Access',
           '✅Unlimited Private Projects','✅Deidcated Phone Support','✅Free Subdomain','✅Monthly Status Reports']}
           button="Button"
        />
-     
+      
     </div>
     </div>
     </div>
   );
- 
+         
 }
 
 export default App;

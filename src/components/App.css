@@ -1,4 +1,4 @@
-/* src/components/PriceCard.css */
+
 .App{
   text-align: center;
   justify-content: center;
@@ -9,6 +9,7 @@
   background-color: #007bff;
   padding: 20px;
 }
+
 .price-card {
     
     background-color:white ;
